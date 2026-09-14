@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El premio</title>
+    <link rel="stylesheet" href="la_llanta.css">
+</head>
+<body>
+    <h1>Felicidades resolviste mi wea</h1>
+    <div class="orientacion">
+        <h2>Haz click en los botones para ver más y links</h2>
+    </div>
+
+    <div class="orientacion" style="margin-top: 30px;">
+        <button
+            class="mi-boton"
+            id="mostrar-seccion"
+            type="button"
+            aria-expanded="false"
+            data-target="texto-oculto"
+        >
+            Felicidades shinji 
+        </button>
+    </div>
+
+    <section id="texto-oculto" class="texto-oculto" aria-hidden="true">
+        <h2>Palabras de Carlitos</h2>
+        <p>we al chile no sé que decirte más que felicitarte por resolver la wea y seguirme la corriente. 
+            A continuacion tienes varias playlist de musica que me gusta y creo que te pueden gustar, y otras 
+            playlist con musica que tambien me gusta, pero es un tanto diferente a lo que acostumbras escuchar. 
+            Como sea, hice la wea porque me divierte y porque quiero que te diviertas de la misma manera que yo, 
+            solo que escuchando.
+        </p>
+    </section>
+
+    <script>
+        const boton = document.getElementById('mostrar-seccion');
+        const seccion = document.getElementById(boton.dataset.target);
+
+        boton.addEventListener('click', () => {
+            const ahoraVisible = seccion.classList.toggle('visible');
+            boton.setAttribute('aria-expanded', String(ahoraVisible));
+            seccion.setAttribute('aria-hidden', String(!ahoraVisible));
+            boton.textContent = ahoraVisible ? 'Ocultar' : 'Felicidades shinji';
+        });
+    </script>
+
+    <div class="orientacion" style="margin-top: 30px;">
+        <a href="https://open.spotify.com/playlist/2Tqge2pLy028iS06elyE8A?si=5a333341a8e043b4&pt=68d65df6ce88c79e6e631aa190b638c4"
+            <button
+                class="mi-boton"
+                type="button"
+                aria-expanded="false"
+            >
+                Rock de chilleo
+            </button>
+        </a>
+    </div>
+    
+    <div class="orientacion" style="margin-top: 30px;">
+        <a href="https://open.spotify.com/playlist/3oYrLEcMRTXYnt1x1yuoyf?si=9a4b039a75fb4665&pt=b1e3caa515d95bf2e70293ab3f3d3404"
+            <button
+                class="mi-boton"
+                type="button"
+                aria-expanded="false"
+
+            >
+                Prog Rock 
+            </button>
+        </a>
+    </div>
+
+    <div class="orientacion" style="margin-top: 30px;">
+        <a href="https://open.spotify.com/playlist/28R8OhDsdLG7vk9cCbqwbU?si=60eb1178cf8448e3&pt=8db459c39542bb0f0a666635c6fd0214"
+            <button
+                class="mi-boton"
+                type="button"
+                aria-expanded="false"
+            >
+                Jazz Soul y similares 
+            </button>
+        </a>
+    </div>
+
+    <div class="orientacion" style="margin-top: 30px;">
+        <a href="https://open.spotify.com/playlist/7a95z5HZCqPoX3vDh5wGUk?si=988d50c474b84283&pt=cab3ebd44b1dbd59363257a039cf276f"
+            <button
+                class="mi-boton"
+                type="button"
+                aria-expanded="false"
+            >
+                Musica Clasica
+            </button>
+        </a>
+    </div>
+
+    <div class="orientacion" style="margin-top: 30px;">
+        <a href="https://open.spotify.com/playlist/2EePVDEjaICtk6eoAfakE2?si=8be86e20a53141c0&pt=d4b6a5a332c09dd88f3b3315e4b37a67"
+            <button
+                class="mi-boton"
+                type="button"
+                aria-expanded="false"
+            >
+                R&B y otros
+            </button>
+        </a>
+    </div>
+
+    <div class="orientacion" style="margin-top: 30px;">
+        <a href="https://open.spotify.com/playlist/6SbleY04LomWx01nRQR984?si=e20fa754f5a04d72&pt=13a5f1052d7f367d34c77bd1ed172543"
+            <button
+                class="mi-boton"
+                type="button"
+                aria-expanded="false"
+            >
+                J-pop y otros
+            </button>
+        </a>
+    </div>
+
+    <div class="orientacion" style="margin-top: 30px;">
+        <a href="https://open.spotify.com/playlist/1mqBz7ewlptJVBlfjiH4H6?si=49b3f05c6446487e&pt=0b50958452cf51997e0440661ff7d6d8"
+            <button
+                class="mi-boton"
+                type="button"
+                aria-expanded="false"
+            >
+                Salsa maciza
+            </button>
+        </a>
+    </div>
+
+    <div class="orientacion" style="margin-top: 30px;">
+        <a href="https://open.spotify.com/playlist/7Fi0GN5mnnUrPKPoGwLOlN?si=d4bf8f61096a47dd&pt=1c51d63589731cc2990ce1a6756018dd"
+            <button
+                class="mi-boton"
+                type="button"
+                aria-expanded="false"
+            >
+                Tengo alma de mujer americana
+            </button>
+        </a>
+    </div>
+
+    <div class="orientacion" style="margin-top: 30px;">
+        <a href="https://open.spotify.com/playlist/1YNpkeYIINE2vZtJnzheql?si=73f2392689f94328&pt=8ac9e89c694203025e7f7cedda2a234d"
+            <button
+                class="mi-boton"
+                type="button"
+                aria-expanded="false"
+            >
+                Teto my beloved
+            </button>
+        </a>
+    </div>
+
+</body>
+</html>
